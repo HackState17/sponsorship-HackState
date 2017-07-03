@@ -1,0 +1,82 @@
+.caption {
+	top: calc((50% + 68px) - 250px) !important;
+}
+
+@media only screen and (max-width: 992px) {
+	#text-carousel-intro-section .caption {
+		top: calc((50% + 68px) - 250px) !important;
+	}
+}
+
+.owl-carousel .item > .mybox {
+	display: flex;
+	align-items:center;
+	background: #600;
+	border: 1px solid #222;
+	
+	/* Hehe fix this really quick */
+	min-height: 500px;
+	height: auto;
+	padding: 15px 20px;
+}
+
+.owl-carousel .item > .mybox img {
+	padding: 15px 0;
+}
+
+.owl-carousel .item > .mybox a.btn {
+	color: inherit;
+	border-color: inherit;
+}
+
+.owl-carousel .item > .mybox a.btn:hover {
+	color: #600;
+}
+
+/* Flex stuff because not Bootstrap 4 (i dont think) */
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 1 auto;
+}
+
+.row-flex-wrap {
+	-webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+	 margin:-.2px; /* hack adjust for wrapping */
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+	width:100%;
+}
+
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 100%;
+	flex-flow: column nowrap;
+}
+
+.flex-grow {
+	display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+.rotate-box-2 {
+	width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+	button.navbar-toggle {
+		margin-right: 0;
+	}
+}
