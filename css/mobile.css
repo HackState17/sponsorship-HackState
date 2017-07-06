@@ -224,7 +224,7 @@
 	  	text-align: center;
 	}
 	.rotate-box-1 .rotate-box-icon {
-		float: none ;
+		display: none;
 		margin-right: 0;
 		margin-bottom: 30px;
 	}
